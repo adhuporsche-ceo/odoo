@@ -1,0 +1,80 @@
+:root,
+[data-bs-theme='light'] {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #15141a;
+  --bs-emphasis-color: #312a70;
+  --bs-secondary-color: #626778;
+  --bs-border-color: #e1e6ff;
+  --bs-primary: #312a70;
+  --bs-primary-rgb: 49, 42, 112;
+  --bs-success: #76c57b;
+  --bs-success-rgb: 118, 197, 123;
+  --bs-danger: #312a70;
+  --bs-danger-rgb: 49, 42, 112;
+  --bs-warning: #f8ead5;
+  --bs-warning-rgb: 248, 234, 213;
+  --bs-info: #e1e6ff;
+  --bs-info-rgb: 225, 230, 255;
+  --bs-secondary: #626778;
+  --bs-secondary-rgb: 98, 103, 120;
+  --bs-light: #ffffff;
+  --bs-light-rgb: 255, 255, 255;
+  --bs-dark: #312a70;
+  --bs-dark-rgb: 49, 42, 112;
+  --bs-success-text-emphasis: #312a70;
+  --bs-success-bg-subtle: #e1e6ff;
+  --bs-success-border-subtle: #e1e6ff;
+  --bs-danger-text-emphasis: #312a70;
+  --bs-danger-bg-subtle: #f8ead5;
+  --bs-danger-border-subtle: #e1e6ff;
+  --bs-warning-text-emphasis: #312a70;
+  --bs-warning-bg-subtle: #f8ead5;
+  --bs-warning-border-subtle: #e1e6ff;
+  --bs-info-text-emphasis: #312a70;
+  --bs-info-bg-subtle: #e1e6ff;
+  --bs-info-border-subtle: #e1e6ff;
+}
+
+[data-theme='dark'],
+[data-bs-theme='dark'] {
+  --bs-body-bg: #312a70;
+  --bs-body-color: #ffffff;
+  --bs-emphasis-color: #ffffff;
+  --bs-secondary-color: #e1e6ff;
+  --bs-border-color: #e1e6ff;
+  --bs-primary: #76c57b;
+  --bs-primary-rgb: 118, 197, 123;
+  --bs-success: #76c57b;
+  --bs-success-rgb: 118, 197, 123;
+  --bs-danger: #f8ead5;
+  --bs-danger-rgb: 248, 234, 213;
+  --bs-warning: #f8ead5;
+  --bs-warning-rgb: 248, 234, 213;
+  --bs-info: #e1e6ff;
+  --bs-info-rgb: 225, 230, 255;
+  --bs-secondary: #e1e6ff;
+  --bs-secondary-rgb: 225, 230, 255;
+  --bs-light: #312a70;
+  --bs-light-rgb: 49, 42, 112;
+  --bs-dark: #ffffff;
+  --bs-dark-rgb: 255, 255, 255;
+  --bs-success-text-emphasis: #ffffff;
+  --bs-success-bg-subtle: #312a70;
+  --bs-success-border-subtle: #e1e6ff;
+  --bs-danger-text-emphasis: #ffffff;
+  --bs-danger-bg-subtle: #312a70;
+  --bs-danger-border-subtle: #e1e6ff;
+  --bs-warning-text-emphasis: #ffffff;
+  --bs-warning-bg-subtle: #312a70;
+  --bs-warning-border-subtle: #e1e6ff;
+  --bs-info-text-emphasis: #ffffff;
+  --bs-info-bg-subtle: #312a70;
+  --bs-info-border-subtle: #e1e6ff;
+}
+
+.btn-close {
+  opacity: 0.8;
+}
+.btn-close:hover {
+  opacity: 1;
+}

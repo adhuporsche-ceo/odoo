@@ -1,0 +1,14 @@
+node_modules/
+.env
+.env.*
+!.env.example
+.vercel
+.local-accounts.json
+logs/
+*.log
+.DS_Store
+dist/
+build/
+/Downloads/
+/POda.txt
+/Po.txt
