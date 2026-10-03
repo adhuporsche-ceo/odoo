@@ -277,7 +277,7 @@ const startServer = async () => {
 
     server.on('error', (error) => {
       if (error.code === 'EADDRINUSE') {
-        console.error(`Port ${PORT} is already in use. Stop the existing server or set PORT to another value.`);
+        console.error(`Port ${port} is already in use. Stop the existing server or set PORT to another value.`);
       } else {
         console.error('Backend listener failed:', error.message);
       }

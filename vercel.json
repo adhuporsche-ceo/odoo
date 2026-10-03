@@ -1,40 +1,15 @@
 {
-  "version": 2,
+  "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "npm ci",
-  "builds": [
-    {
-      "src": "api/[...route].js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "api/socket-io.js",
-      "use": "@vercel/node"
-    },
-    {
-      "src": "public/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/api/socket-io/(.*)",
-      "dest": "/api/socket-io/$1"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/public/$1"
-    }
-  ],
+  "outputDirectory": "public",
   "functions": {
     "api/[...route].js": {
-      "includeFiles": "config/schema.sql"
+      "includeFiles": "config/schema.sql",
+      "maxDuration": 60
     },
     "api/socket-io.js": {
-      "includeFiles": "config/schema.sql"
+      "includeFiles": "config/schema.sql",
+      "maxDuration": 60
     }
   }
 }
