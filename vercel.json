@@ -1,7 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "npm ci",
-  "outputDirectory": "public",
   "functions": {
     "api/[...route].js": {
       "includeFiles": "config/schema.sql",
@@ -11,5 +10,15 @@
       "includeFiles": "config/schema.sql",
       "maxDuration": 60
     }
-  }
+  },
+  "rewrites": [
+    {
+      "source": "/",
+      "destination": "/public/index.html"
+    },
+    {
+      "source": "/((?!api(?:/|$)).*)",
+      "destination": "/public/$1"
+    }
+  ]
 }
