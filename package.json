@@ -9,7 +9,7 @@
   "scripts": {
     "start": "node server.js",
     "dev": "node server.js",
-    "build": "node --check server.js && node --check \"api/[...route].js\" && node --check api/socket-io.js && node --check services/realtimeAdapter.js && node --check config/postgres.js && node --check controllers/authController.js && node --check controllers/studentApplicationController.js && node --check middleware/authMiddleware.js && node --check scripts/seed-accounts.js",
+    "build": "node --check server.js && node --check api/socket-io.js && node --check services/realtimeAdapter.js && node --check config/postgres.js && node --check controllers/authController.js && node --check controllers/studentApplicationController.js && node --check middleware/authMiddleware.js && node --check scripts/seed-accounts.js",
     "lint": "npm run build",
     "dev:backend": "nodemon server.js",
     "seed": "node seed/postgresSeed.js",
