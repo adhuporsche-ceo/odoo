@@ -2,7 +2,7 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "installCommand": "npm ci",
   "functions": {
-    "server.js": {
+    "api/[...route].js": {
       "includeFiles": "config/schema.sql",
       "maxDuration": 60
     },
